@@ -3,7 +3,7 @@ let city = document.getElementById("cityname").value;
 var y=document.getElementById("city");
 y.innerHTML = "<h3>Weather at "+city+"</h3>"
 
-let weather = fetch("http://api.openweathermap.org/data/2.5/forecast?q="+city+"&appid=3dd0107503cefb19bbf5bc1b2c2b6a1a");
+let weather = fetch("https://api.openweathermap.org/data/2.5/forecast?q="+city+"&appid=3dd0107503cefb19bbf5bc1b2c2b6a1a");
 // console.log(weather);
 weather.then((result)=>{
      let res = result.json();
